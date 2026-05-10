@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agent Architecture"
-  short_description: "Design and review reliable AI agent workflows"
-  default_prompt: "Use the Agent Architecture skill to design or review the agent workflow, including roles, context boundaries, side-effect gates, structured outputs, validation, logs, handoffs, rollback, and human escalation."

@@ -2,7 +2,7 @@
 
 A public collection of agent skills and practical AI workflow notes.
 
-The goal is simple: make AI agents more reliable by giving them reusable operating instructions, not just bigger prompts. These skills are meant to be small, inspectable, adaptable, and useful across Claude Code, Codex, Cursor, and other agents that support the Agent Skills convention.
+These skills are meant to be small, inspectable, adaptable, and useful across Claude Code, Codex, Cursor, and other agents that support the Agent Skills convention.
 
 ## Quickstart
 
@@ -32,21 +32,25 @@ npx skills@latest add /Users/testuser/Developer/strongin_ai/agent-skills --list
 
 ## Why This Exists
 
-Most agent failures are not caused by a lack of intelligence. They come from weak operating design:
+I use skills to turn repeatable AI workflows into portable instructions.
 
-- one broad agent doing too many jobs
-- too much irrelevant context
-- planning and execution mixed together
-- side effects with no approval gate
-- free-form handoffs where structured outputs are needed
-- no validation before publishing, deploying, sending, or deleting
-- no durable logs, recovery path, or human escalation
+The goal of this repo is to collect small, practical skills that make agents better at specific jobs: designing systems, reviewing workflows, researching, writing, coding, planning, using tools, or working with external apps.
 
-Skills help turn those lessons into repeatable behavior. Instead of explaining the same workflow from scratch every time, you install the skill and let the agent load the right operating pattern when the task calls for it.
+A good skill captures the parts of a workflow that should not have to be re-explained every time:
+
+- what the agent should pay attention to
+- what steps it should follow
+- what it should avoid
+- what outputs are useful
+- where validation, human review, or handoff matters
+
+The point is not to create a giant agent framework. The point is to make useful workflows easier to reuse, inspect, adapt, and share.
 
 ## Skills
 
-- **[agent-architecture](./skills/agent-architecture/SKILL.md)** - Design or review reliable AI agent systems, multi-agent workflows, tool-using assistants, side-effect gates, validation, logs, handoffs, and rollback paths.
+### agent-architecture
+
+**[agent-architecture](./skills/agent-architecture/SKILL.md)** helps design and review reliable AI agent systems. It focuses on role boundaries, context control, side-effect gates, structured outputs, validation, logging, rollback paths, and human escalation.
 
 ## Examples
 
