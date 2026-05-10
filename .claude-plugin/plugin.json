@@ -1,0 +1,6 @@
+{
+  "name": "strongin-ai-agent-skills",
+  "skills": [
+    "./skills/agent-workflows/agent-architecture"
+  ]
+}
