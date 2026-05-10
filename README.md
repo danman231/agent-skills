@@ -1,6 +1,6 @@
 # Strongin AI Agent Skills
 
-A public collection of agent skills, AI workflow notes, and practical agent architecture patterns.
+A public collection of agent skills and practical AI workflow notes.
 
 The goal is simple: make AI agents more reliable by giving them reusable operating instructions, not just bigger prompts. These skills are meant to be small, inspectable, adaptable, and useful across Claude Code, Codex, Cursor, and other agents that support the Agent Skills convention.
 
@@ -46,23 +46,7 @@ Skills help turn those lessons into repeatable behavior. Instead of explaining t
 
 ## Skills
 
-### Agent Workflows
-
-- **[agent-architecture](./skills/agent-workflows/agent-architecture/SKILL.md)** - Design or review reliable AI agent systems, multi-agent workflows, tool-using assistants, side-effect gates, validation, logs, handoffs, and rollback paths.
-
-### Productivity
-
-No public productivity skills yet.
-
-### Research
-
-No public research skills yet.
-
-## Docs
-
-- [Agent patterns](./docs/agent-patterns/README.md) - Notes and patterns for designing reliable agent systems.
-- [Prompts](./docs/prompts/README.md) - Reusable prompt patterns and examples.
-- [Notes](./docs/notes/README.md) - Public notes about AI agents, workflow design, and skill development.
+- **[agent-architecture](./skills/agent-architecture/SKILL.md)** - Design or review reliable AI agent systems, multi-agent workflows, tool-using assistants, side-effect gates, validation, logs, handoffs, and rollback paths.
 
 ## Examples
 
@@ -75,23 +59,17 @@ No public research skills yet.
 agent-skills/
 ├── .claude-plugin/plugin.json
 ├── skills/
-│   ├── agent-workflows/
-│   ├── productivity/
-│   ├── research/
-│   ├── in-progress/
-│   └── deprecated/
-├── docs/
+│   └── agent-architecture/
 ├── examples/
-└── scripts/
+└── README.md
 ```
 
-Public skills must be listed in three places:
+Public skills should be listed in two places:
 
 1. `.claude-plugin/plugin.json`
 2. the top-level `README.md`
-3. the relevant category `README.md`
 
-Drafts can live under `skills/in-progress/`, but they should not be listed in `.claude-plugin/plugin.json` until they are ready for public install.
+When this repo has enough skills to need categories, add them then. Until then, keep the structure obvious and minimal.
 
 ## License
 
