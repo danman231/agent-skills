@@ -52,11 +52,6 @@ The point is not to create a giant agent framework. The point is to make useful 
 
 **[agent-architecture](./skills/agent-architecture/SKILL.md)** helps design and review reliable AI agent systems. It focuses on role boundaries, context control, side-effect gates, structured outputs, validation, logging, rollback paths, and human escalation.
 
-## Examples
-
-- [Design prompt](./examples/agent-architecture/design-prompt.md)
-- [Review prompt](./examples/agent-architecture/review-prompt.md)
-
 ## Repository Layout
 
 ```text
@@ -64,7 +59,6 @@ agent-skills/
 ├── .claude-plugin/plugin.json
 ├── skills/
 │   └── agent-architecture/
-├── examples/
 └── README.md
 ```
 
