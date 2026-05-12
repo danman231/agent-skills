@@ -18,6 +18,12 @@ Install the Agent Architecture skill:
 npx skills@latest add danman231/agent-skills --skill agent-architecture
 ```
 
+Install the System Bug Investigator skill:
+
+```bash
+npx skills@latest add danman231/agent-skills --skill system-bug-investigator
+```
+
 Install all public skills:
 
 ```bash
@@ -27,7 +33,7 @@ npx skills@latest add danman231/agent-skills --all
 For local review before this repo is published:
 
 ```bash
-npx skills@latest add /Users/testuser/Developer/strongin_ai/agent-skills --list
+npx skills@latest add <path-to-local-checkout> --list
 ```
 
 ## Why This Exists
@@ -52,13 +58,18 @@ The point is not to create a giant agent framework. The point is to make useful 
 
 **[agent-architecture](./skills/agent-architecture/SKILL.md)** helps design and review reliable AI agent systems. It focuses on role boundaries, context control, side-effect gates, structured outputs, validation, logging, rollback paths, and human escalation.
 
+### system-bug-investigator
+
+**[system-bug-investigator](./skills/system-bug-investigator/SKILL.md)** helps investigate bugs, failed jobs, regressions, dirty worktree blockers, CI failures, deployment mismatches, and confusing system behavior before recommending or applying the simplest safe first fix.
+
 ## Repository Layout
 
 ```text
 agent-skills/
 ├── .claude-plugin/plugin.json
 ├── skills/
-│   └── agent-architecture/
+│   ├── agent-architecture/
+│   └── system-bug-investigator/
 └── README.md
 ```
 

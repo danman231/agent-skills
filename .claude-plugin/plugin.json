@@ -1,6 +1,7 @@
 {
   "name": "strongin-ai-agent-skills",
   "skills": [
-    "./skills/agent-architecture"
+    "./skills/agent-architecture",
+    "./skills/system-bug-investigator"
   ]
 }
