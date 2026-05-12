@@ -69,7 +69,7 @@ Follow this order. Keep it proportional to the issue.
    - In `recommend` mode, show the issue and the proposed first fix.
    - In `apply` mode, show the issue and the actual fix made.
    - In `postmortem` mode, show what happened, why, and what prevents recurrence.
-   - Save a self-contained `.html` file in the current workspace under `artifacts/system-bug-investigator/<YYYYMMDD-HHMM>-<short-bug-slug>.html`. If the repo already has a more appropriate local artifacts or reports directory, use that instead and explain the choice.
+   - Save a self-contained `.html` file in the current workspace under `artifacts/system-bug-investigator/YYYYMMDD-HHMM-short-bug-slug.html`. If the repo already has a more appropriate local artifacts or reports directory, use that instead and explain the choice.
    - Only skip the HTML file if the user explicitly requests text-only output or the environment cannot write files. If skipped, say why.
 
 ## Visual Explainer Artifact
