@@ -1,6 +1,6 @@
 ---
 name: system-bug-investigator
-description: Investigate bugs, alerts, failed jobs, regressions, dirty worktree blockers, CI failures, deployment mismatches, and confusing system behavior before recommending or applying a fix. Use this when a problem may involve multiple files, scripts, services, schedulers, queues, databases, deployments, external tools, or runtime state. Default to diagnosis and the simplest safe first fix unless the user explicitly asks to apply changes.
+description: Investigate bugs, alerts, failed jobs, regressions, dirty worktree blockers, CI failures, deployment mismatches, and confusing system behavior before recommending or applying a fix. Use this when a problem may involve multiple files, scripts, services, schedulers, queues, databases, deployments, external tools, or runtime state. Default to diagnosis and the simplest safe first fix unless the user explicitly asks to apply changes. Produce a concise visual HTML explainer after the diagnosis or fix.
 ---
 
 # System Bug Investigator
@@ -64,6 +64,38 @@ Follow this order. Keep it proportional to the issue.
    - Choose the simplest non-over-engineered fix that preserves the surrounding system.
    - Explain why it is lower risk than obvious alternatives.
    - Include alternatives only when there is a real trade-off.
+
+7. Create a visual explainer after the diagnosis or fix.
+   - In `recommend` mode, show the issue and the proposed first fix.
+   - In `apply` mode, show the issue and the actual fix made.
+   - In `postmortem` mode, show what happened, why, and what prevents recurrence.
+   - Save a self-contained `.html` file in the current workspace under `artifacts/system-bug-investigator/<YYYYMMDD-HHMM>-<short-bug-slug>.html`. If the repo already has a more appropriate local artifacts or reports directory, use that instead and explain the choice.
+   - Only skip the HTML file if the user explicitly requests text-only output or the environment cannot write files. If skipped, say why.
+
+## Visual Explainer Artifact
+
+The HTML artifact is for a non-technical reader seeing the issue for the first time. It should translate the investigation into a short visual story, not duplicate the whole report.
+
+Requirements:
+
+- Use one self-contained HTML file with inline CSS and no external CDN or network dependency.
+- Keep it concise: one screenful on desktop when possible, and no more than 3 to 5 short sections.
+- Use plain language. Avoid unexplained acronyms, internal code names, and stack jargon. If a technical term is unavoidable, define it in a few words.
+- Make the main takeaway obvious in the first viewport: "what broke", "why it broke", and "what fixes it".
+- Include at least one useful visual: before/after cards, flowchart, timeline, dependency map, failure path, state diagram, bar or step comparison, or similar.
+- Choose the visual that matches the bug surface:
+  - flowchart for workflow, queue, scheduler, pipeline, or deploy bugs
+  - before/after cards for code or config behavior changes
+  - timeline for regressions, incident sequence, or delayed automation
+  - dependency map for cross-repo, API, database, or deployment mismatch bugs
+  - small metric or status grid for alerts, verification states, or dirty worktree blockers
+- Show only the components that matter to understanding the bug and fix. Do not include every file inspected.
+- Clearly separate `Before` from `After` or `Broken path` from `Fixed path`.
+- Include a compact `How we know` section with the verification check or the check still needed.
+- Use visual hierarchy, spacing, and restrained color. It should feel like a clear one-page incident explainer, not a debug log.
+- Make the file browser-openable without a dev server.
+
+When generating the artifact, prefer semantic HTML plus CSS boxes, arrows, tables, and simple inline SVG only when it makes the visual clearer. Do not use screenshots unless they are directly useful and already available locally.
 
 ## Dirty Worktree And Promotion Blockers
 
@@ -137,6 +169,9 @@ Downstream risk if fixed wrong: [one line]
 **Verification**
 [What to run or check before calling it fixed.]
 
+**Visual Explainer**
+[Path to the generated HTML file, plus one sentence describing what it shows.]
+
 **Apply?**
 [Ask whether to apply the recommended fix, unless the user already requested apply mode.]
 ```
@@ -149,6 +184,9 @@ In `apply` mode, replace `Apply?` with:
 
 **Verification**
 [Commands or checks run and result.]
+
+**Visual Explainer**
+[Path to the generated HTML file, plus one sentence describing what it shows.]
 ```
 
 In `postmortem` mode, focus on:
@@ -157,6 +195,7 @@ In `postmortem` mode, focus on:
 - why it failed
 - why existing safeguards did or did not catch it
 - what changed or should change to prevent recurrence
+- the generated visual explainer path and what it shows
 
 ## Examples Are Not Exhaustive
 

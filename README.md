@@ -60,7 +60,7 @@ The point is not to create a giant agent framework. The point is to make useful 
 
 ### system-bug-investigator
 
-**[system-bug-investigator](./skills/system-bug-investigator/SKILL.md)** helps investigate bugs, failed jobs, regressions, dirty worktree blockers, CI failures, deployment mismatches, and confusing system behavior before recommending or applying the simplest safe first fix.
+**[system-bug-investigator](./skills/system-bug-investigator/SKILL.md)** helps investigate bugs, failed jobs, regressions, dirty worktree blockers, CI failures, deployment mismatches, and confusing system behavior before recommending or applying the simplest safe first fix. It also produces a concise, browser-openable HTML explainer that visually shows the issue, the fix, and the verification path for non-technical readers.
 
 ## Repository Layout
 
