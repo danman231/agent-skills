@@ -2,6 +2,10 @@
   "name": "strongin-ai-agent-skills",
   "skills": [
     "./skills/agent-architecture",
-    "./skills/system-bug-investigator"
+    "./skills/system-bug-investigator",
+    "./skills/eli5",
+    "./skills/ste",
+    "./skills/explain-page",
+    "./skills/explain-video"
   ]
 }

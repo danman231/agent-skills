@@ -24,6 +24,12 @@ Install the System Bug Investigator skill:
 npx skills@latest add danman231/agent-skills --skill system-bug-investigator
 ```
 
+Install the four "make AI explain it" skills (based on Andrej Karpathy's Oct 2026 post on understanding LLM output):
+
+```bash
+npx skills@latest add danman231/agent-skills --skill ste --skill eli5 --skill explain-page --skill explain-video
+```
+
 Install all public skills:
 
 ```bash
@@ -62,6 +68,24 @@ The point is not to create a giant agent framework. The point is to make useful 
 
 **[system-bug-investigator](./skills/system-bug-investigator/SKILL.md)** helps investigate bugs, failed jobs, regressions, dirty worktree blockers, CI failures, deployment mismatches, and confusing system behavior before recommending or applying the simplest safe first fix. It also produces a concise, browser-openable HTML explainer that visually shows the issue, the fix, and the verification path for non-technical readers.
 
+### ste
+
+**[ste](./skills/ste/SKILL.md)** writes or rewrites text in ASD-STE100 Simplified Technical English, the controlled language of aircraft maintenance manuals: short sentences, one instruction per sentence, active voice, one name per thing. 80% strictness by default (the softer version Karpathy suggests), full STE on request. Includes `scripts/ste_check.py`, which flags long sentences, passives, contractions and other rule breaks. Requires: python3.
+
+### eli5
+
+**[eli5](./skills/eli5/SKILL.md)** explains any topic to a total beginner as one visual HTML page: big pictures, few words, 3–6 numbered steps. Adapted from Thariq's (@trq212) `eli5` skill in [anthropics/claude-plugins-community](https://github.com/anthropics/claude-plugins-community) (Apache-2.0), extended with source-checking, a visual form per kind of topic, and word limits.
+
+### explain-page
+
+**[explain-page](./skills/explain-page/SKILL.md)** builds an interactive HTML explainer page you can play with (a simulator, a clickable map, a before/after toggle) to understand a system, a concept, or work an agent just did. Every claim is labeled VERIFIED or UNVERIFIED, and every control is tested before hand-off. Writes its text with `ste`. Requires: python3, Google Chrome (macOS path in `scripts/check_page.sh`).
+
+### explain-video
+
+**[explain-video](./skills/explain-video/SKILL.md)** makes a narrated 3Blue1Brown-style explainer video (MP4): a teaching plan, narration written in STE, a free local voice (Kokoro), and a render with [HyperFrames](https://github.com/heygen-com/hyperframes). It then checks its own audio, transcript, and frames. Most videos are 1–4 minutes. Requires: the `ste` skill, Node + HyperFrames (with its `faceless-explainer` / `general-video` skills and Kokoro voice setup), ffmpeg, python3. Optional: an ElevenLabs API key.
+
+> Script paths in these skills assume Claude Code's default skills folder (`~/.claude/skills/<name>/`). If your agent installs skills elsewhere, point the paths at that folder.
+
 ## Repository Layout
 
 ```text
@@ -69,6 +93,10 @@ agent-skills/
 ├── .claude-plugin/plugin.json
 ├── skills/
 │   ├── agent-architecture/
+│   ├── eli5/
+│   ├── explain-page/
+│   ├── explain-video/
+│   ├── ste/
 │   └── system-bug-investigator/
 └── README.md
 ```
