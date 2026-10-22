@@ -1,4 +1,4 @@
-# Every prompt from "A Claude Engineer's 3 Ways to Be More Ambitious With AI"
+# Every prompt from "A Claude Engineer's 3 Ways to Get More Out of AI"
 
 Prompts from the Strongin AI YouTube video. Felix Rieseberg's quoted lines stay his; the repo's MIT license covers only our summaries.
 
