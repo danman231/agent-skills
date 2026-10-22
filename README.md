@@ -86,11 +86,18 @@ The point is not to create a giant agent framework. The point is to make useful 
 
 > Script paths in these skills assume Claude Code's default skills folder (`~/.claude/skills/<name>/`). If your agent installs skills elsewhere, point the paths at that folder.
 
+## Prompts from the videos
+
+**[prompts/](./prompts/README.md)** holds the copy-paste prompts from Strongin AI videos, one file per video.
+
+- [A Claude Engineer's 3 Ways to Be More Ambitious With AI](./prompts/be-more-ambitious-with-ai.md)
+
 ## Repository Layout
 
 ```text
 agent-skills/
 ├── .claude-plugin/plugin.json
+├── prompts/
 ├── skills/
 │   ├── agent-architecture/
 │   ├── eli5/
