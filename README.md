@@ -91,6 +91,7 @@ The point is not to create a giant agent framework. The point is to make useful 
 **[prompts/](./prompts/README.md)** holds the copy-paste prompts from Strongin AI videos, one file per video.
 
 - [A Claude Engineer's 3 Ways to Get More Out of AI](./prompts/be-more-ambitious-with-ai.md)
+- [How Do You Know Your AI Agent Actually Tested Its Work?](./prompts/make-ai-prove-it-works.md)
 
 ## Repository Layout
 
