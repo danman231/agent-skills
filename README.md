@@ -93,6 +93,7 @@ The point is not to create a giant agent framework. The point is to make useful 
 - [A Claude Engineer's 3 Ways to Get More Out of AI](./prompts/be-more-ambitious-with-ai.md)
 - [How Do You Know Your AI Agent Actually Tested Its Work?](./prompts/make-ai-prove-it-works.md)
 - [Karpathy Fixed His YouTube Feed in 2 Hours With Claude. Here's the Idea You Can Copy](./prompts/karpathy-hackertube-youtube-feed.md)
+- [An Anthropic Engineer's 5 Checks Before You Trust AI](./prompts/ai-skill-atrophy-critical-thinking.md)
 
 ## Repository Layout
 
