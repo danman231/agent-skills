@@ -94,6 +94,7 @@ The point is not to create a giant agent framework. The point is to make useful 
 - [How Do You Know Your AI Agent Actually Tested Its Work?](./prompts/make-ai-prove-it-works.md)
 - [Karpathy Fixed His YouTube Feed in 2 Hours With Claude. Here's the Idea You Can Copy](./prompts/karpathy-hackertube-youtube-feed.md)
 - [An Anthropic Engineer's 5 Checks Before You Trust AI](./prompts/ai-skill-atrophy-critical-thinking.md)
+- [20 Grok Bot Use Cases for Your Life, Business and Work](./prompts/grok-bot-use-cases-tips.md)
 
 ## Repository Layout
 
