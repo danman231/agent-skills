@@ -95,6 +95,7 @@ The point is not to create a giant agent framework. The point is to make useful 
 - [Karpathy Fixed His YouTube Feed in 2 Hours With Claude. Here's the Idea You Can Copy](./prompts/karpathy-hackertube-youtube-feed.md)
 - [An Anthropic Engineer's 5 Checks Before You Trust AI](./prompts/ai-skill-atrophy-critical-thinking.md)
 - [20 Grok Bot Use Cases for Your Life, Business and Work](./prompts/grok-bot-use-cases-tips.md)
+- [Use Fable 5.2 as the Boss, Not the Worker](./prompts/which-claude-model-to-use.md)
 
 ## Repository Layout
 
