@@ -9,3 +9,4 @@ Copy-paste prompts from Strongin AI videos, one file per video.
 | Karpathy Fixed His YouTube Feed in 2 Hours With Claude. Here's the Idea You Can Copy | [karpathy-hackertube-youtube-feed.md](./karpathy-hackertube-youtube-feed.md) |
 | An Anthropic Engineer's 5 Checks Before You Trust AI | [ai-skill-atrophy-critical-thinking.md](./ai-skill-atrophy-critical-thinking.md) |
 | 20 Grok Bot Use Cases for Your Life, Business and Work | [grok-bot-use-cases-tips.md](./grok-bot-use-cases-tips.md) |
+| Use Fable 5.2 as the Boss, Not the Worker | [which-claude-model-to-use.md](./which-claude-model-to-use.md) |
