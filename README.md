@@ -97,6 +97,7 @@ The point is not to create a giant agent framework. The point is to make useful 
 - [20 Grok Bot Use Cases for Your Life, Business and Work](./prompts/grok-bot-use-cases-tips.md)
 - [Use Fable 5.2 as the Boss, Not the Worker](./prompts/which-claude-model-to-use.md)
 - [Gemini 4 Hydrogen vs 6 Models, Ranked by Cost per Job](./prompts/gemini-4-hydrogen.md)
+- [5 Claude Code Jobs Anthropic Says to Stop Doing Yourself](./prompts/lydia-hallie-claude-code-practices.md)
 
 ## Repository Layout
 
