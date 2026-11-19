@@ -98,6 +98,7 @@ The point is not to create a giant agent framework. The point is to make useful 
 - [Use Fable 5.2 as the Boss, Not the Worker](./prompts/which-claude-model-to-use.md)
 - [Gemini 4 Hydrogen vs 6 Models, Ranked by Cost per Job](./prompts/gemini-4-hydrogen.md)
 - [5 Claude Code Jobs Anthropic Says to Stop Doing Yourself](./prompts/lydia-hallie-claude-code-practices.md)
+- [GPT-6.2 Astra vs Claude Fable 5.2: Who Wins?](./prompts/astra-vs-fable-same-jobs.md)
 
 ## Repository Layout
 
