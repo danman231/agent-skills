@@ -12,3 +12,4 @@ Copy-paste prompts from Strongin AI videos, one file per video.
 | Use Fable 5.2 as the Boss, Not the Worker | [which-claude-model-to-use.md](./which-claude-model-to-use.md) |
 | Gemini 4 Hydrogen vs 6 Models, Ranked by Cost per Job | [gemini-4-hydrogen.md](./gemini-4-hydrogen.md) |
 | 5 Claude Code Jobs Anthropic Says to Stop Doing Yourself | [lydia-hallie-claude-code-practices.md](./lydia-hallie-claude-code-practices.md) |
+| GPT-6.2 Astra vs Claude Fable 5.2: Who Wins? | [astra-vs-fable-same-jobs.md](./astra-vs-fable-same-jobs.md) |
