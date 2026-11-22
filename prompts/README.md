@@ -13,3 +13,4 @@ Copy-paste prompts from Strongin AI videos, one file per video.
 | Gemini 4 Hydrogen vs 6 Models, Ranked by Cost per Job | [gemini-4-hydrogen.md](./gemini-4-hydrogen.md) |
 | 5 Claude Code Jobs Anthropic Says to Stop Doing Yourself | [lydia-hallie-claude-code-practices.md](./lydia-hallie-claude-code-practices.md) |
 | GPT-6.2 Astra vs Claude Fable 5.2: Who Wins? | [astra-vs-fable-same-jobs.md](./astra-vs-fable-same-jobs.md) |
+| Claude Opus 5.5 vs GPT-6.2 Sol: Same 3 Jobs, Side by Side | [sol-vs-opus-same-prompts.md](./sol-vs-opus-same-prompts.md) |

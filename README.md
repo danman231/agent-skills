@@ -99,6 +99,7 @@ The point is not to create a giant agent framework. The point is to make useful 
 - [Gemini 4 Hydrogen vs 6 Models, Ranked by Cost per Job](./prompts/gemini-4-hydrogen.md)
 - [5 Claude Code Jobs Anthropic Says to Stop Doing Yourself](./prompts/lydia-hallie-claude-code-practices.md)
 - [GPT-6.2 Astra vs Claude Fable 5.2: Who Wins?](./prompts/astra-vs-fable-same-jobs.md)
+- [Claude Opus 5.5 vs GPT-6.2 Sol: Same 3 Jobs, Side by Side](./prompts/sol-vs-opus-same-prompts.md)
 
 ## Repository Layout
 
